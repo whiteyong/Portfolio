@@ -53,11 +53,14 @@ const projects: Project[] = [
     ],
     technologies: ["Figma", "Flow", "Notion", "PowerPoint", "Redmine", "ERP 시스템"],
     coverImage: "/finance-dashboard-cover.png",
-    thumbnailImage: "/finance-dashboard-screen1.png",
+    thumbnailImage: "/s-cloud-erp-banner.png",
     gallery: [
-      { url: "/erp-production-screen1.png", caption: "생산 등록 화면 - 제품 생산 시 소요자재 자동 등록" },
-      { url: "/erp-inventory-screen2.png", caption: "재고 수량 자동 계산 - 판매/출고에 따른 재고 변동 자동화" },
-      { url: "/erp-bom-screen3.png", caption: "소요량(BOM) 관리 - 품목별 소요자재 설정 및 관리" },
+      { url: "/scld-inventory-receipt-history.png", caption: "입고내역 조회 - 품목별 입고 이력 및 재고 현황 관리" },
+      { url: "/scld-production-registration.jpeg", caption: "제품생산 신규등록 - 생산 작업지시 및 소요자재 자동 계산" },
+      { url: "/scld-bom-registration.png", caption: "소요량(BOM) 등록 - 제품별 소요자재 구성 및 수량 설정" },
+      { url: "/scld-inventory-reports.png", caption: "재고보고서 - 다양한 재고 현황 및 분석 리포트 제공" },
+      { url: "/scld-group-product-design.png", caption: "그룹상품 등록 설계 - 세트 상품 관리 기능 설계 문서" },
+      { url: "/scld-item-registration-design.png", caption: "품목등록 설계 - 품목 마스터 관리 기능 설계 문서" },
     ],
     client: "Inhouse Project",
     timeline: "4개월 (2022.01-2022.04)",
@@ -99,7 +102,7 @@ const projects: Project[] = [
     ],
     technologies: ["Figma", "Adobe XD", "Flow", "Notion", "PowerPoint", "스크래핑 API"],
     coverImage: "/webcash-accounting-banner.png",
-    thumbnailImage: "/modern-finance-app.png",
+    thumbnailImage: "/webcash-accounting-banner.png",
     gallery: [
       {
         url: "/webcash-client-receivable-settings.png",
@@ -145,6 +148,14 @@ const projects: Project[] = [
         url: "/webcash-inventory-excel-import.png",
         caption: "재고관리 > 환경설정 - 기초재고설정 품목 불러오기 기능 및 엑셀 일괄등록 기능 추가",
       },
+      {
+        url: "/webcash-warehouse-transfer-reason.png",
+        caption: "재고관리 > 창고이동 등록 - 이동사유 입력 항목 추가 및 리스트 메뉴에서 이동사유 확인 가능",
+      },
+      {
+        url: "/webcash-transaction-statement-print.png",
+        caption: "거래명세표 인쇄 - 대표자명 표기 옵션 추가로 필요 시 거래처명 및 대표자명 표기 가능",
+      },
     ],
     client: "Inhouse Project",
     timeline: "2022.01~2024.08 (2년 8개월)",
@@ -188,7 +199,27 @@ const projects: Project[] = [
     coverImage: "/serp-main-dashboard.png",
     thumbnailImage: "/serp-main-dashboard.png",
     gallery: [
-      { url: "/serp-main-dashboard.png", caption: "sERP 메인 대시보드 - 통합 업무 관리 화면" },
+      {
+        url: "/serp-etax-individual-issuance-new.png",
+        caption: "전자세금계산서건별발행(NEW) - 전자세금계산서 발행 시 종사업장 코드, 주소관리 기능 추가",
+      },
+      {
+        url: "/serp-daily-sales-import-export.png",
+        caption: "일별영업현황 반입/반출 등록 프로세스 개선 - 판매/구매 등록 시 업무 효율성 향상",
+      },
+      {
+        url: "/serp-transaction-statement-b-type-improvement.png",
+        caption:
+          "거래명세표 B타입 수기 작성 시 품목 월일 수정 가능하도록 개선 - MM-DD 형식 입력 및 유효성 검증 기능 추가",
+      },
+      {
+        url: "/serp-quote-management-hold-status.png",
+        caption: "영업물류 거래처원장 보고서 항목 헤더 클릭 시 정렬 기능 추가",
+      },
+      {
+        url: "/serp-etax-holiday-formatting.png",
+        caption: "전자세금계산서 일괄등록 시 국세청 휴일 등록 상호명 표시 형식 개선",
+      },
       { url: "/serp-etax-attachment-limit.png", caption: "전자세금계산서 발행 시 압축파일 관련 확장자 첨부 제한 안내" },
       {
         url: "/serp-sales-contact-info.png",
