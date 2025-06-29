@@ -52,7 +52,7 @@ const projects: Project[] = [
       "상황에 맞는 재고보고서 선택하여 조회 가능",
     ],
     technologies: ["Figma", "Flow", "Notion", "PowerPoint", "Redmine", "ERP 시스템"],
-    coverImage: "/finance-dashboard-cover.png",
+    coverImage: "/s-cloud-erp-banner.png",
     thumbnailImage: "/s-cloud-erp-banner.png",
     gallery: [
       { url: "/scld-inventory-receipt-history.png", caption: "입고내역 조회 - 품목별 입고 이력 및 재고 현황 관리" },
@@ -292,10 +292,19 @@ const projects: Project[] = [
     coverImage: "/ecommerce-redesign-cover.png",
     thumbnailImage: "/modern-apparel-storefront.png",
     gallery: [
-      { url: "/ecommerce-redesign-screen1.png", caption: "랜딩페이지 설계" },
-      { url: "/ecommerce-redesign-screen2.png", caption: "작문 서비스 화면" },
-      { url: "/ecommerce-redesign-screen3.png", caption: "요금제 페이지" },
-      { url: "/ecommerce-redesign-screen4.png", caption: "백오피스 어드민" },
+      {
+        url: "/rhetorike-landing-page.jpeg",
+        caption: "RHETORIKE 랜딩페이지 - 메인 히어로 섹션 및 GLOT Writing 서비스 소개",
+      },
+      {
+        url: "/glot-writing-interface.png",
+        caption: "GLOT Writing 작문 인터페이스 - AI 기반 텍스트 생성 및 편집 화면",
+      },
+      { url: "/glot-login-page.png", caption: "GLOT 로그인 페이지 - 사용자 인증 및 회원가입 프로세스" },
+      {
+        url: "/rhetorike-features-page.png",
+        caption: "RHETORIKE 기능 소개 페이지 - GLOT Writing 서비스 특징 및 사용법 안내",
+      },
     ],
     client: "레토리케 (스타트업)",
     timeline: "3개월 (2023.09-2023.11)",
