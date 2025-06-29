@@ -34,7 +34,7 @@ const projects: Project[] = [
   {
     id: 1,
     slug: "webcash-erp-inventory",
-    title: "S Cloud ERP 재고/생산 모듈 기획",
+    title: "S Cloud ERP 제품 출시-유지 운영(재고/생산관리 기획)",
     category: "SaaS",
     shortDescription: "SaaS형 ERP 재고/생산관리, 품목정보 마스터 기획",
     description: [
@@ -59,6 +59,14 @@ const projects: Project[] = [
       { url: "/scld-production-registration.jpeg", caption: "제품생산 신규등록 - 생산 작업지시 및 소요자재 자동 계산" },
       { url: "/scld-bom-registration.png", caption: "소요량(BOM) 등록 - 제품별 소요자재 구성 및 수량 설정" },
       { url: "/scld-inventory-reports.png", caption: "재고보고서 - 다양한 재고 현황 및 분석 리포트 제공" },
+      {
+        url: "/scld-inventory-valuation-calculation.png",
+        caption: "재고평가계산/해제 - 재고 평가 방법별 계산 및 해제 관리",
+      },
+      {
+        url: "/scld-inventory-cost-statement.png",
+        caption: "입출고원가명세서 - 품목별 입출고 원가 및 재고 현황 상세 조회",
+      },
       { url: "/scld-group-product-design.png", caption: "그룹상품 등록 설계 - 세트 상품 관리 기능 설계 문서" },
       { url: "/scld-item-registration-design.png", caption: "품목등록 설계 - 품목 마스터 관리 기능 설계 문서" },
     ],
@@ -83,7 +91,7 @@ const projects: Project[] = [
   {
     id: 2,
     slug: "webcash-accounting",
-    title: "WEB경리나라 출시",
+    title: "WEB경리나라 제품 출시-유지 운영",
     category: "SaaS",
     shortDescription: "웹브라우저 기반의 경리나라 핵심 기능 설계, 기능 개선 및 운영 프로젝트",
     description: [
@@ -272,7 +280,7 @@ const projects: Project[] = [
   {
     id: 4,
     slug: "rethorike-ai-writing",
-    title: "생성형 AI 작문 서비스",
+    title: "생성형 AI 작문 서비스 기획",
     category: "AI 서비스",
     shortDescription: "LLM 기반 작문 서비스를 제로 베이스에서 기획한 스타트업 프로젝트",
     description: [
