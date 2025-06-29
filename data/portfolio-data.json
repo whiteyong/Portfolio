@@ -1,65 +1,161 @@
 {
-  "personalInformation": {
-    "name": "John Doe",
-    "title": "Software Engineer",
-    "email": "john.doe@example.com",
-    "linkedin": "linkedin.com/in/johndoe",
-    "github": "github.com/johndoe",
-    "location": "Anytown, USA",
-    "summary": "A passionate software engineer with experience in web development and machine learning."
+  "meta": {
+    "title": "안소용 | 서비스 기획자",
+    "description": "S Cloud ERP(SaaS) 재고/생산관리, 품목정보 마스터 모듈 기획"
   },
-  "skills": ["JavaScript", "React", "Node.js", "Python", "Machine Learning", "SQL", "Git"],
-  "projects": [
+  "personal": {
+    "name": "안소용",
+    "title": "서비스 기획자",
+    "location": "서울 강서구",
+    "avatar": "/profile-photo.jpg",
+    "email": "dks0056@naver.com",
+    "phone": "010-9606-1039",
+    "workingHours": "평일 9시 - 6시",
+    "availableForWork": true,
+    "badges": ["서비스기획", "PM/PO"],
+    "social": [
+      {
+        "platform": "Portfolio",
+        "url": "https://www.figma.com/proto/7xvgcGdY7l5mMAOqqpnAmD/%EC%95%88%EC%86%8C%EC%9A%A9-%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4?page-id=974%3A2&node-id=974-4&viewport=706%2C437%2C0.06&t=d8jbHvt8KYd0TdjR-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=974%3A4",
+        "icon": "ExternalLink"
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/in/%EC%86%8C%EC%9A%A9-%EC%95%88-ab4226269/",
+        "icon": "Linkedin"
+      },
+      {
+        "platform": "Email",
+        "url": "mailto:dks0056@naver.com",
+        "icon": "Mail"
+      }
+    ]
+  },
+  "about": {
+    "bio": "(주)웹케시에서 소상공인 경리 서비스(SaaS), ERP 영업물류 서비스 기획을 담당하였습니다. AI LLM 에듀테크 작문 서비스 외부 프로젝트를 진행하며 제로 베이스에서 정책을 수립하고 서비스를 만든 경험을 한 적이 있습니다.",
+    "focus": [
+      "고객 니즈와 VOC를 분석하여 비즈니스 임팩트가 높은 기능을 우선적으로 정의",
+      "IA, PRD, 화면설계서, User Flow 작성",
+      "SQL 쿼리를 활용하여 문제의 원인을 조회하고, 데이터 기반 의사결정 가능",
+      "바이브 코딩 경험을 보유하여 AI 업무 활용도가 높음"
+    ],
+    "languages": [
+      {
+        "name": "한국어",
+        "proficiency": "Native",
+        "level": 100,
+        "flag": "🇰🇷"
+      },
+      {
+        "name": "영어",
+        "proficiency": "Intermediate High",
+        "level": 70,
+        "flag": "🇺🇸"
+      }
+    ],
+    "interests": ["서비스 기획", "데이터 분석", "AI/LLM", "UX/UI", "프로젝트 관리"]
+  },
+  "navigation": [
     {
-      "title": "Project 1",
-      "description": "A web application built with React and Node.js.",
-      "technologies": ["React", "Node.js", "Express", "MongoDB"],
-      "link": "example.com/project1"
+      "label": "Home",
+      "href": "/"
     },
     {
-      "title": "Project 2",
-      "description": "A machine learning model for image classification.",
-      "technologies": ["Python", "TensorFlow", "Keras"],
-      "link": "example.com/project2"
+      "label": "Experience",
+      "href": "#experience"
+    },
+    {
+      "label": "Credentials",
+      "href": "#credentials"
+    },
+    {
+      "label": "Skills",
+      "href": "#skills"
+    },
+    {
+      "label": "Projects",
+      "href": "#projects"
     }
   ],
   "experience": [
     {
-      "company": "Company A",
-      "title": "Software Engineer",
-      "startDate": "2020-01-01",
-      "endDate": "2022-01-01",
-      "description": "Developed and maintained web applications using React and Node.js."
+      "title": "SMB상품기획실 · 대리/파트장",
+      "company": "웹케시",
+      "period": "2020.10 - 2025.04 (4년 7개월)",
+      "description": "소상공인 경리 서비스 '경리나라'와 중소기업 대상 ERP 'sERP', 'sERP Enterprise' 제품에서 영업(Sales and Purchasing) · 주문(QO, SO, PO) · 재고 · 생산, 국세청 홈택스 연동, 품목·거래처 마스터 관리 모듈 기획·운영 총괄하였습니다. 또한 VOC/VOE 데이터를 상시 분석해 기능 개선 우선순위 수립 → 운영 배포 로드맵 관리 및 배포까지 경험하였습니다.",
+      "achievements": [
+        "S Cloud ERP(SaaS) 재고/생산관리 모듈 기획 및 유지·운영으로 End-to-End 사이클 경험",
+        "웹브라우저 기반 경리 서비스 기획 및 유지·운영으로 제품 안정화",
+        "sERP Enterprise 견적서 관리 메뉴 커스터 마이징",
+        "빌드, 릴리즈 버전 담당으로 내부 프로세스 체계화",
+        "메인 업무 외에도 랜딩페이지 리뉴얼 프로젝트를 통해 디자인·개발과 협업하여 기획 및 마케팅 역할 수행"
+      ],
+      "technologies": ["Figma", "Adobe XD", "Flow", "Notion", "SQL", "MS Office", "Redmine"]
     },
     {
-      "company": "Company B",
-      "title": "Data Scientist",
-      "startDate": "2022-01-01",
-      "endDate": "Present",
-      "description": "Built machine learning models for various applications."
+      "title": "서비스 기획자 · 프리랜서",
+      "company": "레토리케",
+      "period": "2023.09 - 2023.11 (3개월)",
+      "description": "생성형 AI(LLM) 기반 작문 서비스 기획에 참여하여 웹·앱 랜딩페이지 및 백오피스 어드민을 기획했습니다. 제로 베이스에서 요금제 정책, 환불 기준 등 전체 정책 문서를 정리하고 디자이너·개발자와 협업했습니다.",
+      "achievements": [
+        "기간 내 웹·앱 서비스 기획 및 결제, 환불 등 각종 약관에 대한 정책 수립",
+        "브랜드 컨셉(논리적·객관적·체계적인 교육 서비스) 기반 랜딩페이지 기획",
+        "정책이 없는 초기 상태에서 기준 수립",
+        "PG사 연동하여 구독모델 프로세스 기획"
+      ],
+      "technologies": ["Figma", "Slack", "Notion", "Jira", "Google Docs"]
     }
   ],
-  "education": [
-    {
-      "institution": "University X",
-      "degree": "Master of Science in Computer Science",
-      "startDate": "2018-01-01",
-      "endDate": "2020-01-01",
-      "logo": "/university-x-logo.png"
-    },
-    {
-      "institution": "동명대학교",
-      "degree": "Bachelor of Science in Computer Engineering",
-      "startDate": "2014-01-01",
-      "endDate": "2018-01-01",
-      "logo": "/tongmyong-university-logo.png"
-    }
-  ],
-  "awards": [
-    {
-      "name": "Award 1",
-      "date": "2021-01-01",
-      "description": "Awarded for outstanding performance."
-    }
-  ]
+  "credentials": {
+    "certifications": [
+      {
+        "name": "SQL개발자(SQLD)",
+        "issuer": "한국데이터베이스진흥센터",
+        "date": "2023.10",
+        "logo": "/sqld-logo.png"
+      },
+      {
+        "name": "TOEIC Speaking Test (Intermediate High)",
+        "issuer": "ETS",
+        "date": "2025.04",
+        "logo": "/toeic-logo.png"
+      },
+      {
+        "name": "MOS Excel 2010 Expert",
+        "issuer": "Microsoft",
+        "date": "2014.12",
+        "logo": "/microsoft-logo.png"
+      },
+      {
+        "name": "MOS Word 2010 Expert",
+        "issuer": "Microsoft",
+        "date": "2014.12",
+        "logo": "/microsoft-logo.png"
+      }
+    ],
+    "education": [
+      {
+        "degree": "금융회계학과 학사",
+        "institution": "동명대학교",
+        "year": "2012-2016",
+        "logo": "/tongmyong-university-logo.png"
+      }
+    ],
+    "skills": [
+      "서비스 기획",
+      "프로젝트 관리",
+      "VOC 모니터링",
+      "화면설계",
+      "요구사항 정의",
+      "기능정의",
+      "SQL 쿼리",
+      "AI 업무 활용"
+    ]
+  },
+  "technicalSkills": {
+    "design": ["Figma", "Adobe XD", "Flow", "화면설계서", "와이어프레임", "User Flow", "IA 설계"],
+    "development": ["SQL", "MySQL", "데이터 조회", "PRD 작성", "API 연동 기획"],
+    "uxMethods": ["VOC 모니터링", "VOE 수집", "우선순위 설정", "테스트 시나리오 작성", "QA 테스트"],
+    "softSkills": ["프로젝트 리딩", "팀 협업", "개발자•디자이너 협업", "일정 관리", "문서 작성", "프레젠테이션"]
+  }
 }
