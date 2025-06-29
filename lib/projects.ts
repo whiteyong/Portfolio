@@ -101,10 +101,46 @@ const projects: Project[] = [
     coverImage: "/webcash-accounting-banner.png",
     thumbnailImage: "/modern-finance-app.png",
     gallery: [
-      { url: "/job-finder-screen1.png", caption: "거래처 대시보드" },
-      { url: "/job-finder-screen2.png", caption: "계정 연동 관리" },
-      { url: "/job-finder-screen3.png", caption: "재고 일괄등록" },
-      { url: "/job-finder-screen4.png", caption: "보안 모듈 설치" },
+      {
+        url: "/webcash-client-receivable-settings.png",
+        caption: "거래처 미수/미지급 업무설정 - 미수금, 미지급금 계산기준 설정",
+      },
+      {
+        url: "/webcash-client-batch-registration.png",
+        caption: "거래처 일괄 등록 양식 세분화 - 사업자(간편), 사업자(상세), 개인 거래처 세 가지로 세분화",
+      },
+      {
+        url: "/webcash-client-batch-order-improvement.png",
+        caption: "거래처 일괄 등록 항목 순서 변경 및 항목 추가 - 엑셀 일괄등록 시 항목 순서 개선",
+      },
+      {
+        url: "/webcash-client-contact-info-enhancement.png",
+        caption: "거래처 등록 항목 개선 - 휴대폰번호, 팩스번호, 회사전화번호 등 연락처 정보 추가",
+      },
+      {
+        url: "/webcash-sales-receivable-manual-adjustment.png",
+        caption: "거래처 > 매출/미수내역, 매입/지급내역 - 미수금 수기정리 기능 추가",
+      },
+      {
+        url: "/webcash-transaction-order-ui-improvement.png",
+        caption: "거래관리, 주문관리 공통 UI 개선 - 메일, 팩스 기능 추가 및 합계 행 추가",
+      },
+      {
+        url: "/webcash-advance-payment-ledger.png",
+        caption: "매입/지출 전도금원장 상세조회 - 전도금 관련 정보 조회 기능",
+      },
+      {
+        url: "/webcash-settlement-document-creation.png",
+        caption: "전도금원장 > 정산서/정구서 작성 - 전도금 정산서 작성 기능",
+      },
+      {
+        url: "/webcash-bank-account-thumbnail-view.png",
+        caption: "은행 > 계좌조회 (썸네일형) - 계좌별 잔액 조회 기능 개선",
+      },
+      {
+        url: "/webcash-client-dashboard-enhancement.png",
+        caption: "거래처 대시보드 일부 기능 변경 - 거래처명 표시 및 최근거래정보 기능 개선",
+      },
     ],
     client: "Inhouse Project",
     timeline: "2022.01~2024.08 (2년 8개월)",
@@ -128,6 +164,78 @@ const projects: Project[] = [
   },
   {
     id: 3,
+    slug: "serp-sales-logistics",
+    title: "sERP 영업물류 운영",
+    category: "PaaS",
+    shortDescription: "중소기업용 ERP 영업물류, 전자세금계산서, Mail/Fax 모듈 운영",
+    description: [
+      "sERP는 웹케시의 대표 설치형 ERP 제품으로 중소기업을 대상으로 한 통합 경영 관리 솔루션입니다.",
+      "영업물류 모듈은 영업 관리(판매, 구매 등), 주문 관리(견적서, 수주서, 발주서 관리)와 세금계산서 발행, 재고/생산관리 등 영업 활동으로 일어나는 모든 업무 프로세스를 관리하는 핵심 모듈입니다.",
+      "sERP는 오랜 기간동안 유지되어 온 제품인 만큼 17,000이 넘는 고객사를 보유하고 있으며, 충성 고객 또한 많은 서비스입니다.",
+    ],
+    features: [
+      "일별영업현황 반입/반출 기능 개선",
+      "거래명세표 B타입 기능 개선",
+      "전자세금계산서 발행 시 종사업장번호 관리 기능 추가",
+      "고객사 방문하여 영업물류 모듈 관련 사용 방법 컨설팅",
+      "그 외 장애 대응 및 기능 개선 다수 진행",
+    ],
+    technologies: ["Figma", "Flow", "Notion", "PowerPoint", "Redmine", "ERP 시스템"],
+    coverImage: "/serp-main-dashboard.png",
+    thumbnailImage: "/serp-main-dashboard.png",
+    gallery: [
+      { url: "/serp-main-dashboard.png", caption: "sERP 메인 대시보드 - 통합 업무 관리 화면" },
+      { url: "/serp-etax-attachment-limit.png", caption: "전자세금계산서 발행 시 압축파일 관련 확장자 첨부 제한 안내" },
+      {
+        url: "/serp-sales-contact-info.png",
+        caption: "영업현황관리 거래처현장에서 동일 거래처 여러 페이지 인쇄 시 전화번호, 팩스번호 정보 모두 표시",
+      },
+      {
+        url: "/serp-transaction-statement-a.png",
+        caption: "거래명세표 A타입(전용지) 상세 조회 시 부가세 제외한 금액 표시",
+      },
+      {
+        url: "/serp-quantity-decimal-display.png",
+        caption: "거래등록 판매/구매등록 및 주문서 등록 시 수량 합계란에 소수점 이하 모두 표시되도록 개선",
+      },
+      {
+        url: "/serp-etax-branch-management.png",
+        caption: "전자세금계산서건별발행(NEW) - 전자세금계산서 발행 시 종사업장 코드, 주소관리하는 기능 추가",
+      },
+      {
+        url: "/serp-etax-privacy-masking.png",
+        caption: "전자세금계산서 관리 - 영업물류 전자세금계산서 인쇄 시 개인 거래처 주민번호 마스킹 처리",
+      },
+      { url: "/serp-quote-status-hold.png", caption: "영업물류 견적서 상태 목록에 '보류' 항목 추가" },
+      {
+        url: "/serp-inventory-barcode-view.png",
+        caption: "영업물류 품목별/장소별제고현황에서 '바코드' 보기 항목 추가",
+      },
+      {
+        url: "/serp-bizmail-reply-address.png",
+        caption: "비즈메일 발송 메뉴에서 '회신주소설정' 추가하여 수신자 메일에서 '답장자메일주소' 확인 가능",
+      },
+    ],
+    client: "Inhouse Project",
+    timeline: "2020.10~2025.04 (지속적 운영)",
+    role: "서비스 기획자(기여도 100%)",
+    relatedProjects: [
+      {
+        slug: "webcash-erp-inventory",
+        title: "S Cloud ERP 재고/생산 모듈",
+        category: "SaaS",
+        image: "/finance-dashboard-screen1.png",
+      },
+      {
+        slug: "webcash-accounting",
+        title: "웹경리나라 서비스",
+        category: "SaaS 서비스",
+        image: "/modern-finance-app.png",
+      },
+    ],
+  },
+  {
+    id: 4,
     slug: "rethorike-ai-writing",
     title: "생성형 AI 작문 서비스",
     category: "AI 서비스",
@@ -169,53 +277,6 @@ const projects: Project[] = [
         title: "클라우드 ERP 재고/생산 모듈",
         category: "ERP 서비스",
         image: "/finance-dashboard-screen1.png",
-      },
-    ],
-  },
-  {
-    id: 4,
-    slug: "serp-sales-logistics",
-    title: "sERP 영업물류 운영",
-    category: "PaaS",
-    shortDescription: "설치형 ERP 영업물류 모듈 운영 및 기능 개선 프로젝트",
-    description: [
-      "sERP는 웹케시의 대표 설치형 ERP 제품으로, 중소기업을 대상으로 한 종합 업무관리 솔루션입니다.",
-      "영업물류 모듈은 견적서, 주문서, 납품서, 세금계산서 등 영업 전반의 업무 프로세스를 관리하는 핵심 모듈입니다.",
-      "고객사의 다양한 업무 환경과 요구사항에 맞춰 커스터마이징이 가능한 유연한 구조로 설계되어 있습니다.",
-    ],
-    features: [
-      "견적서, 주문서, 납품서, 세금계산서 통합 관리",
-      "고객사별 커스터마이징 지원",
-      "영업 프로세스 자동화",
-      "재고 연동 및 실시간 수량 관리",
-      "다양한 출력 양식 지원",
-      "승인 워크플로우 관리",
-      "매출/매입 분석 리포트 제공",
-    ],
-    technologies: ["Figma", "Flow", "Notion", "PowerPoint", "Redmine", "ERP 시스템"],
-    coverImage: "/job-finder-cover.png",
-    thumbnailImage: "/confident-professional.png",
-    gallery: [
-      { url: "/finance-dashboard-screen1.png", caption: "영업 관리 대시보드" },
-      { url: "/finance-dashboard-screen2.png", caption: "견적서 관리" },
-      { url: "/finance-dashboard-screen3.png", caption: "주문서 처리" },
-      { url: "/finance-dashboard-screen4.png", caption: "매출 분석 리포트" },
-    ],
-    client: "Inhouse Project",
-    timeline: "2020.10~2025.04 (지속적 운영)",
-    role: "서비스 기획자 (운영 담당)",
-    relatedProjects: [
-      {
-        slug: "webcash-erp-inventory",
-        title: "S Cloud ERP 재고/생산 모듈",
-        category: "SaaS",
-        image: "/finance-dashboard-screen1.png",
-      },
-      {
-        slug: "webcash-accounting",
-        title: "웹경리나라 서비스",
-        category: "SaaS 서비스",
-        image: "/modern-finance-app.png",
       },
     ],
   },

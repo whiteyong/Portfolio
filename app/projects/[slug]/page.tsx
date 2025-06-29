@@ -1,6 +1,9 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowLeft, ExternalLink, Github } from "lucide-react"
+import { useState, useEffect } from "react"
+import { ArrowLeft, ExternalLink, Github, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { SkillTag } from "@/components/skill-tag"
@@ -22,6 +25,27 @@ export default function ProjectPage({ params }: ProjectPageProps) {
   if (!project) {
     notFound()
   }
+
+  const [selectedImage, setSelectedImage] = useState<{ url: string; caption?: string } | null>(null)
+
+  // ESC 키로 모달 닫기
+  useEffect(() => {
+    const handleEsc = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setSelectedImage(null)
+      }
+    }
+
+    if (selectedImage) {
+      document.addEventListener("keydown", handleEsc)
+      document.body.style.overflow = "hidden"
+    }
+
+    return () => {
+      document.removeEventListener("keydown", handleEsc)
+      document.body.style.overflow = "unset"
+    }
+  }, [selectedImage])
 
   return (
     <main className="min-h-screen bg-black text-white">
@@ -131,12 +155,15 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
                       {project.gallery.map((image, index) => (
                         <AnimatedSection key={index} animation="zoom-in" delay={100 * (index + 1)}>
-                          <div className="relative h-40 sm:h-48 rounded-lg overflow-hidden border border-zinc-800">
+                          <div
+                            className="relative h-40 sm:h-48 rounded-lg overflow-hidden border border-zinc-800 cursor-pointer hover:border-zinc-600 transition-colors"
+                            onClick={() => setSelectedImage(image)}
+                          >
                             <Image
                               src={image.url || "/placeholder.svg"}
                               alt={image.caption || `Gallery image ${index + 1}`}
                               fill
-                              className="object-cover"
+                              className="object-cover hover:scale-105 transition-transform duration-300"
                             />
                           </div>
                         </AnimatedSection>
@@ -223,6 +250,44 @@ export default function ProjectPage({ params }: ProjectPageProps) {
 
       {/* Scroll to Top Button */}
       <EnhancedScrollIndicator />
+
+      {/* Image Modal */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm p-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div className="relative w-full h-full flex items-center justify-center" onClick={(e) => e.stopPropagation()}>
+            {/* Close Button */}
+            <button
+              onClick={() => setSelectedImage(null)}
+              className="absolute top-4 right-4 z-10 w-12 h-12 rounded-full bg-black/70 hover:bg-black/90 flex items-center justify-center text-white transition-colors border border-zinc-600 hover:border-zinc-400"
+              aria-label="Close image"
+            >
+              <X className="w-6 h-6" />
+            </button>
+
+            {/* Image Container */}
+            <div className="relative w-full h-full flex items-center justify-center">
+              <Image
+                src={selectedImage.url || "/placeholder.svg"}
+                alt={selectedImage.caption || "Gallery image"}
+                fill
+                className="object-contain"
+                sizes="100vw"
+                priority
+              />
+            </div>
+
+            {/* Caption */}
+            {selectedImage.caption && (
+              <div className="absolute bottom-4 left-4 right-4 bg-black/80 backdrop-blur-sm p-4 rounded-lg border border-zinc-700">
+                <p className="text-white text-sm sm:text-base text-center">{selectedImage.caption}</p>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
     </main>
   )
 }
