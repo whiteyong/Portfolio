@@ -141,6 +141,10 @@ const projects: Project[] = [
         url: "/webcash-client-dashboard-enhancement.png",
         caption: "거래처 대시보드 일부 기능 변경 - 거래처명 표시 및 최근거래정보 기능 개선",
       },
+      {
+        url: "/webcash-inventory-excel-import.png",
+        caption: "재고관리 > 환경설정 - 기초재고설정 품목 불러오기 기능 및 엑셀 일괄등록 기능 추가",
+      },
     ],
     client: "Inhouse Project",
     timeline: "2022.01~2024.08 (2년 8개월)",
